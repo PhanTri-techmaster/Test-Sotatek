@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../assets/scss/component.scss';
 import DatePicker from 'react-datepicker';
 import svgDatePicker from '../assets/icons/calendar.svg';
@@ -7,10 +7,15 @@ const DatePickerCustom = ({
     title = 'DatePicker',
     className = '',
     selected,
-    onChange = () => {},
+    onChange = () => { },
     placeholderText = 'Choose date...',
 }) => {
     const [startDate, setStartDate] = useState(selected);
+
+    useEffect(() => {
+        setStartDate(selected)
+    }, [selected])
+    console.log(selected, '123123');
     return (
         <label className="base custom">
             <span className="base__title">{title}</span>

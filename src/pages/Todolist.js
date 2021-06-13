@@ -25,7 +25,7 @@ function Todolist() {
     const index = todolist.findIndex((item) => item.id === todo.id);
 
     todolist.splice(index, 1, todo);
-    setTodoList((todolist) => [...todolist]);
+    setTodoList(todolist);
   };
 
 
@@ -50,6 +50,7 @@ function Todolist() {
     setData(newList);
   };
 
+  console.log(todolist,'todolist');
 
   return (
     <div style={{ position: "relative", height: "100%", display: "flex" }}>
@@ -119,7 +120,6 @@ function Todolist() {
                     }}
                   >
                     <ActiveTodo
-                      todo={todo}
                       removeTodo={deleteTodos}
                     />
                   </div>

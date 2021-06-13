@@ -2,7 +2,7 @@ import React from 'react';
 import '../assets/scss/TodoItem.scss';
 import Button from '../components/Button';
 
-function ActiveTodo({ todo, removeTodo = () => {} }) {
+function ActiveTodo({ removeTodo = () => {} }) {
     return (
         <div>
             <div className="todo-item" style={{ background: '#cacaca', maxWidth:"800px", margin:"auto",padding: "24px 0px", borderRadius: 0 }}>

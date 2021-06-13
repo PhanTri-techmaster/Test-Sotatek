@@ -65,6 +65,8 @@ const TodoForm = ({
         }
     },[])
 
+    console.log(form,"form");
+
     return (
         <form onSubmit={handleSubmit} className="add-todo">
             <Layout>
