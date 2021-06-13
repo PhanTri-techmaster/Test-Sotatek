@@ -1,0 +1,19 @@
+.pdr-8 {
+    padding-right: 8px;
+    width: 100% !important;
+}
+.pdl-8 {
+    width: 100% !important;
+    padding-left: 8px;
+}
+
+.add-todo {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+
+    &__datepick {
+        display: flex;
+        flex-direction: row;
+    }
+}

@@ -1,0 +1,23 @@
+.todo-item {
+    display: flex;
+    padding: 24px 12px;
+    margin-top: 24px;
+    background-color: #f5f5f5;
+    border: 1px solid black;
+    align-items: center;
+
+    &__icon {
+    }
+
+    &__content {
+        text-align: left;
+        padding-left: 24px;
+        flex-grow: 1;
+    }
+
+    &__actions {
+        button {
+            margin: 0 8px;
+        }
+    }
+}

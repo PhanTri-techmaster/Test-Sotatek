@@ -1,0 +1,99 @@
+@import './styles.scss';
+
+.base {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+
+    &__title {
+        font-weight: bold;
+        padding: 4px 0;
+    }
+}
+
+.custom {
+    &__input {
+        padding: 8px 8px;
+        border-radius: 5px;
+        border: 1px solid black;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+    }
+
+    &__input-search, &__input-title {
+        border: 3px solid #cacaca;
+    }
+
+    &__textarea {
+        padding: 8px 8px;
+        border: 1px solid black;
+        width: 100%;
+        min-height: 200px;
+        box-sizing: border-box;
+    }
+
+    &__datepicker {
+        width: 100%;
+        border: 1px solid black;
+        position: relative;
+        background-color: white;
+        padding-left: 8px;
+
+        &--input {
+            padding: 8px 0;
+            border-radius: 5px;
+            border: none;
+            width: 100% !important;
+        }
+        &--input:focus {
+            padding: 8px 0;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            width: 100%;
+        }
+
+        &--icon {
+            position: absolute;
+            top: 50%;
+            bottom: 50%;
+            right: 5px;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &__select {
+        padding: 8px 8px;
+        border: 1px solid black;
+        width: 100%;
+    }
+}
+
+.button {
+    padding: 12px;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+.add {
+    background-color: $color-button-add;
+    margin-top:50px
+}
+.detail {
+    background-color: $color-button-detail;
+}
+.remove {
+    background-color: $color-button-remove;
+}
+.done {
+    background-color: $color-button-done;
+}
+.react-datepicker-wrapper{
+    width: 100%;
+}
