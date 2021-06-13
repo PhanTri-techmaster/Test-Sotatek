@@ -15,7 +15,7 @@ const DatePickerCustom = ({
     useEffect(() => {
         setStartDate(selected)
     }, [selected])
-    console.log(selected, '123123');
+
     return (
         <label className="base custom">
             <span className="base__title">{title}</span>

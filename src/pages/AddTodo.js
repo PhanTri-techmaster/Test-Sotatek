@@ -2,7 +2,7 @@ import React from 'react';
 import '../assets/scss/AddTodo.scss';
 import TodoForm from '../components/TodoForm';
 
-const AddTodo = ({ title = 'New Add Todo', getTodo = () => {} }) => {
+const AddTodo = ({ title = 'New Task', getTodo = () => {} }) => {
     const handleSubmit = (form) => {
         getTodo(form);
     };
